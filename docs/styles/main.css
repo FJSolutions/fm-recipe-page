@@ -1,0 +1,141 @@
+@font-face {
+  font-family: Outfit;
+  src: url("/assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Young Serif;
+  src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --stone-100: #f3e6d8;
+  --stone-150: #e4ded8;
+  --stone-600: #5f574e;
+  --stone-900: #302d2c;
+  --brown-800: #854632;
+  --rose-50: #fff5fa;
+  --rose-800: #7b284f;
+}
+
+body {
+  background-color: var(--stone-150);
+  margin: 0;
+  padding: 0;
+  font-family: Outfit, sans-serif;
+  font-size: 12pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Young Serif, serif;
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  padding: 0 1.5em;
+}
+
+li {
+  padding: .5em 0;
+}
+
+.recipe {
+  background-color: var(--white);
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.recipe hr {
+  border: none;
+  border-bottom: solid 1px var(--stone-150);
+  height: 1px;
+  margin: 1.5em 0;
+}
+
+.recipe__image {
+  width: 100%;
+}
+
+.recipe__info {
+  padding: 0 2em;
+}
+
+.recipe__info h1 {
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.recipe__info h2 {
+  color: var(--brown-800);
+  font-size: 1.5em;
+}
+
+.recipe__info__preptime {
+  background-color: var(--rose-50);
+  border-radius: .6em;
+  padding: 1em;
+}
+
+.recipe__info__preptime h2 {
+  color: var(--rose-800);
+  margin: 0;
+  font-family: Outfit, serif;
+  font-size: 1.1em;
+  font-weight: bolder;
+}
+
+.recipe__info table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.recipe__info tr:not(:last-child) {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.recipe__info td > p {
+  margin: .8em;
+}
+
+.recipe__table__cals {
+  color: var(--brown-800);
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    font-size: 16pt;
+  }
+
+  .recipe {
+    border-radius: 2em;
+    margin: 6em auto;
+  }
+
+  .recipe__info h1 {
+    font-size: 2.2em;
+  }
+
+  .recipe__image {
+    border-radius: 3em;
+    padding: 2em;
+  }
+
+  .recipe__info {
+    padding: 0 2em;
+  }
+}

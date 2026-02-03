@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Outfit;
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-50: hsl(330, 100%, 98%);
+    --rose-800: hsl(332, 51%, 32%);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Outfit, sans-serif;
+    font-size: 12pt;
+    background-color: var(--stone-150);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Young Serif', serif;
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    padding: 0 1.5em;
+}
+
+li {
+    padding: 0.5em 0;
+}
+
+.recipe {
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding-bottom: 2em;
+}
+
+.recipe hr {
+    height: 1px;
+    border: none;
+    border-bottom: solid 1px var(--stone-150);
+    margin: 1.5em 0;
+}
+
+.recipe__image {
+    width: 100%;
+}
+
+.recipe__info {
+    padding: 0 2em;
+}
+
+.recipe__info h1 {
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.recipe__info h2 {
+    color: var(--brown-800);
+    font-size: 1.5em;
+}
+
+.recipe__info__preptime {
+    background-color: var(--rose-50);
+    border-radius: 0.6em;
+    padding: 1em;
+
+    h2 {
+        font-family: Outfit, serif;
+        font-size: 1.1em;
+        font-weight: bolder;
+        color: var(--rose-800);
+        margin: 0;
+    }
+}
+
+.recipe__info table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.recipe__info tr:not(:last-child) {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.recipe__info td>p {
+    margin: 0.8em;
+}
+
+.recipe__table__cals {
+    color: var(--brown-800);
+    font-weight: bolder;
+}
+
+@media screen and (width >= 376px) {
+    body {
+        font-size: 16pt;
+    }
+
+    .recipe {
+        border-radius: 2em;
+        margin: 6em auto;
+    }
+
+    .recipe__info h1 {
+        font-size: 2.2em;
+    }
+
+    .recipe__image {
+        border-radius: 3em;
+        padding: 2em;
+    }
+
+    .recipe__info {
+        padding: 0 2em;
+    }
+}

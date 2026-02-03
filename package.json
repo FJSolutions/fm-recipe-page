@@ -1,0 +1,23 @@
+{
+  "name": "recipe-page-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "live-server --port=3210",
+    "css": "lightningcss -d ./styles --targets \">=0.25%\"  ./src/styles/main.css ",
+    "build": "pnpm css && node _build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.27.0",
+  "dependencies": {
+    "lightningcss": "^1.31.1",
+    "lightningcss-cli": "^1.31.1"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.3.3"
+  }
+}
